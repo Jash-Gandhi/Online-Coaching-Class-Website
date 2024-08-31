@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>JNM.com</title>
+	<link rel="icon" type="image/x-icon" href="logo.png">
+	<meta charset="UTF-8">
+	<meta name="viewport" content=
+		"width=device-width, initial-scale=1.0">
+<style>
+    #ContactUs{
+    width:100vw;
+    height:100vh;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: bisque;
+}
+.form-shape input, .form-shape select, .form-shape textarea{
+   width: 92%;
+   padding: 0.5rem;
+}
+</style>
+	<link rel="stylesheet" href="style.css">
+	<title>ContactUs</title>
+</head>
+
+<body bgcolor="bisque">
+	<img src="logo.png" alt="not found" width="100" height="80">
+	<div id="ContactUs">
+		<h1>Contact Us</h1>
+		<form action="#">
+			<div class="form-shape">
+				<label for="query">
+					Type of Query
+				</label>
+				<select name="myQuery" id="query">
+					<option value="sel" selected>
+						Select
+					</option>
+					<option value="ord">
+						Video related Issues
+					</option>
+					<option value="Site">
+						Site related Issues
+					</option>
+					<option value="fed">
+						Complaint
+					</option>
+					<option value="others">
+						Others
+					</option>
+				</select>
+			</div>
+			<div class="form-shape">
+				<label for="name">Name</label>
+				<input type="text" name="myName"
+					id="name"
+					placeholder="Enter your Name">
+			</div>
+			<div class="form-shape">
+				<label for="email">Email-Id</label>
+				<input type="email" name="myEmail"
+					id="email"
+					placeholder="Enter your email">
+			</div>
+			<div class="form-shape">
+				<label for="pho">Phone Number</label>
+				<input type="phone" name="myPhone"
+					id="pho"
+					placeholder="Enter your Phone no">
+			</div>
+
+			<div class="form-shape">
+				<label for="message">
+					Ellaborate your query
+				</label>
+				<textarea name="mesg" id="message"
+					cols="30" rows="10">
+				</textarea>
+			</div>
+			<input type="submit" value="Submit">
+			<input type="reset" value="Reset">
+		</form>
+	</div>
+</body>
+
+</html>
